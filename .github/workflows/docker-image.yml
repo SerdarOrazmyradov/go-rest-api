@@ -26,4 +26,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: your-dockerhub-username/my-image:latest   
+          tags: oserdar25/my-image:latest   
