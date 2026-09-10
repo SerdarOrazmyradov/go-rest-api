@@ -2,7 +2,7 @@ FROM golang:1.21-alpine
 EXPOSE 8080
 RUN apk add --update git
 WORKDIR /go/go-rest-api
-RUN go mod init go-rest-api && go get github.com/gorilla/mux@latest
+RUN go mod init go-rest-api && go get github.com/gorilla/mux@latest && go get github.com/emersion/go-imap@latest && go get github.com/emersion/go-message@latest
 COPY rest-api.go ./
 RUN go build -o go-rest-api .
 
